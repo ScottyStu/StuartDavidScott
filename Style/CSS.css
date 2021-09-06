@@ -61,7 +61,7 @@ h2 {
 .topnav a:hover {
   background-color: rgb(189, 189, 189, 0.5);
   color: black;
-  text-decoration: underline;
+  text-decoration: 2px underline;
 }
 
 .topnav a.active {
@@ -164,7 +164,6 @@ h2 {
   margin-left: 10%;
   float: left;
   width: 38%;
-  padding: 20px;
 }
 
 .stuart_img_2 {
@@ -175,10 +174,13 @@ h2 {
 
 .About_myself {
   overflow: hidden;
-  margin-top: 2em;
   margin-right: 14%;
   float: right;
   width: 35%;
+}
+
+#head_1{
+  margin-bottom: 0.2em;
 }
 .Para_1 {
   text-align: justify;
@@ -191,7 +193,7 @@ h2 {
 
 .button {
   float: left;
-  margin-top: 0.5em;
+  margin-top: 1.5em;
   border: none;
   color: white;
   padding: 14px 30px;
