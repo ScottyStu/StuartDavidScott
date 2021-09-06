@@ -230,6 +230,11 @@ h2 {
     margin: auto;
   }
 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;}
+
 }
 
 /* SECTION 3 */
