@@ -36,7 +36,7 @@ h2 {
   color: black;
   overflow: hidden;
   float: left;
-  font-size: 2em;
+  font-size: 1.8em;
   padding: 17px 19px;
 }
 
@@ -145,6 +145,33 @@ h2 {
   margin-right: 30%;
 }
 
+@media screen and (max-width: 900px) {
+
+.row:after {
+ content: "";
+  display: table;
+  clear: both;
+}
+
+.header {
+  background-color: rgba(233, 233, 233);
+  height: 29em;
+}
+
+.photo_1 {
+  margin-left: auto;
+  margin-right: auto;
+  width: 350px;
+  height: 350px;
+  overflow: hidden;
+  border-style: solid;
+  border-color: white;
+  border-width: 0.45em;
+  border-radius: 50%;
+}
+
+}
+
 /* SECTION 2 */
 
 .About_Me {
@@ -190,7 +217,6 @@ h2 {
 }
 
 
-
 .button {
   float: left;
   margin-top: 1.5em;
@@ -234,6 +260,11 @@ h2 {
     content: "";
     display: table;
     clear: both;}
+
+  .button{
+    margin-right: 30%;
+    margin-left: 30%;
+  }
 
 }
 
