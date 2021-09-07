@@ -326,27 +326,12 @@ h2 {
   float: left;
   width: 42%;
   margin-left: 3%;
-  /* border-radius: 5px; */
-}
-
-.Lang_Photo {
-  width: 49%;
-  height: auto;
-  border-radius: 5px 5px 0 0;
-  padding: 5%;
-}
-
-.Python {
-  width: 49%;
-  padding: 0;
-  margin-bottom: 3%;
 }
 
 .Section_3 {
   float: right;
   width: 55%;
   padding: 1em;
-  /* margin-top: 4%; */
 }
 
 .container {
@@ -429,8 +414,18 @@ h2 {
 
 @media only screen and (max-width: 600px) {
   .columns {
-    width: 40%;
-    padding-left: 0%;
-    padding-right: 0%;
+    width: 100%;
+    margin: auto;
+    padding-left: 3em;
+    padding-right: 3em;
+  }
+
+  .price{
+    width: 100%;
+    font-size: 1em;
+  }
+
+  .Icon{
+    width: 35% ;
   }
 }
