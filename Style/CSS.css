@@ -29,6 +29,20 @@ h2 {
   margin: 0;
   padding: 0;
 }
+@media screen and (max-width: 900px) {
+  h1{
+    font-size: 2.5em;
+  }
+  h2{
+    font-size: 1.8em;
+  }
+  hr{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 37%;
+    margin-left: 37%;
+  }
+}
 
 /* NAVBAR */
 
@@ -36,8 +50,8 @@ h2 {
   color: black;
   overflow: hidden;
   float: left;
-  font-size: 1.8em;
-  padding: 17px 19px;
+  font-size: 1.6em;
+  padding: 20px 18px;
 }
 
 .topnav {
@@ -80,6 +94,12 @@ h2 {
     float: right;
     display: block;
   }
+  .topnav{
+    background-color: transparent;
+  }
+  .banner{
+    display: none;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -94,10 +114,9 @@ h2 {
   .topnav.responsive a {
     float: none;
     display: block;
-    text-align: left;
+    text-align: center;
   }
 }
-
 /* SECTION 1 */
 
 .header {
@@ -155,19 +174,27 @@ h2 {
 
 .header {
   background-color: rgba(233, 233, 233);
-  height: 29em;
+  height: auto;
+  padding: 1em;
 }
 
 .photo_1 {
   margin-left: auto;
   margin-right: auto;
-  width: 350px;
-  height: 350px;
+  width: 320px;
+  height: 320px;
   overflow: hidden;
   border-style: solid;
   border-color: white;
   border-width: 0.45em;
   border-radius: 50%;
+}
+
+.quote {
+  font-size: 1.1em;
+  margin-top: 5%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 }
@@ -245,7 +272,13 @@ h2 {
   .About_Me{
     padding: 2em;
   }
-  
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
   .Photo_2{
     width: 100%;
     margin: auto;
@@ -256,10 +289,16 @@ h2 {
     margin: auto;
   }
 
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;}
+  #head_1{
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin: 0;
+  }
+
+  .Para_1{
+    word-spacing: 0.1em;
+    font-size: 1.1em;
+  }
 
   .button{
     margin-right: 30%;
@@ -351,6 +390,9 @@ h2 {
   .skills_html, .skills_css, .skills_js,.skills_python{
     height: 1.5em;
   }
+  .container{
+    padding: 1em;
+  }
 }
 
 /* SECTION 4 */
@@ -373,6 +415,7 @@ h2 {
 }
 
 .price {
+  display: block;
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -387,5 +430,7 @@ h2 {
 @media only screen and (max-width: 600px) {
   .columns {
     width: 40%;
+    padding-left: 0%;
+    padding-right: 0%;
   }
 }
