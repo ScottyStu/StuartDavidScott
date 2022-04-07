@@ -8,20 +8,10 @@ function myFunction() {
   }
 }
 
-// BUTTON
 
 // SKILLS
 
-let called = false;
-document.addEventListener("scroll", (e) => {
-  if (document.documentElement.scrollTop >= 1500) {
-    if (called) return;
-    called = true;
-    calledEvent();
-  }
-});
-
-function calledEvent() {
+window.onload = function calledEvent() {
   var elem = document.querySelectorAll(".container");
   var width = 10;
   var id = setInterval(frame, 15);
@@ -34,10 +24,12 @@ function calledEvent() {
       elem[1].style.width = width + "%";
       elem[2].style.width = width + "%";
       elem[3].style.width = width + "%";
+      elem[4].style.width = width + "%";
       // document.querySelector(".skills_html").innerHTML = width * 1 + "%";
       // document.querySelector(".skills_css").innerHTML = width * 1 + "%";
       // document.querySelector(".skills_js").innerHTML = width * 1 + "%";
       // document.querySelector(".skills_python").innerHTML = width * 1 + "%";
+      // document.querySelector(".skills_wp").innerHTML = width * 1 + "%";
     }
   }
 }

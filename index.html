@@ -1,169 +1,53 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Stuart David Scott </title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+    <title>Stuart David Scott</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/Icons/favicon-32x32.png">
+    <link rel="stylesheet" href="Style/style.css">
+
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
     
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rubik&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="Icons/favicon.ico">
-    <link rel="stylesheet" href="Style/CSS.css" />
-    <script src="Script/Script.js"></script>
+</head>
+<body>
 
-  </head>
-
-  <body>
-    <nav class="topnav" id="myTopnav">
-      <p class ='banner'>STUART DAVID SCOTT</p>
-        <a href="index.html" class="active">Home</a>
-        <a href="#About_me">About Me</a>
-        <a href="#My_Skills">My Skills</a>
-        <a href="#Contact">Contact</a>
-        <a href="Succeed_Group\index.html">Projects</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-    </nav>
-
-    <!-- SECTION 1 -->
-
-    <header class="header">
-      <div class="photo_1">
-        <img
-          src="Images/Stuart_2.jpg"
-          alt="Picture of Stuart"
-          class="stuart_img"
-        />
-      </div>
-    </header>
-
-    <div class="description">
-      <h1>Stuart David Scott</h1>
-
-      <h2>Junior Web Developer</h2>
-
-      <p class="quote">
-        “A successful website does three things: It attracts the right kinds of
-        visitors. Guides them to the main services or product you offer. Collect
-        Contact details for future ongoing relation."
-      </p>
-      <p class="quote_2">Mohamed Saad</p>
+  <div class="topnav" id="myTopnav">
+    <a href="index.html" style="float: left; padding: 1%;" class="logo"><img src="Images/Logo_1.png" alt="" style="width: 3.5em; float: left;"  ></a>
+    <a href="About.html" class="navbar"><i class="fa fa-info-circle" aria-hidden="true"></i>ABOUT</a>
+    <a href="Skills.html" class="navbar"><i class="fa fa-code" aria-hidden="true"></i>SKILLS</a>
+    <a href="Portfolio.html" class="navbar"><i class="fa fa-folder-open" aria-hidden="true"></i>PORTFOLIO</a>
+    <a href="Contact.html" class="navbar"><i class="fa fa-phone " aria-hidden="true"></i>CONTACT</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars" ></i>
+    </a>
+  </div>
+  
+  <section style="margin: 0;">
+    <div class="description" >
+        <h1>STUART DAVID SCOTT</h1>
+        <h2>Junior Web Developer</h2>
+        <p>“My goal is to create beautiful and responsive websites that attract the right kinds of vistors to  guide them to the main services or products the site has to offer.”</p>
+       <div style="padding-top: 4%;"><a href="Portfolio.html"  class="button">Projects Portfolio</a></div> 
     </div>
 
-    <hr />
 
-    <!-- SECTION 2 -->
+</section>
 
-    <div class="About_Me" id="About_me">
-      <div class="row">
-        <div class="Photo_2">
-          <img
-            src="Images/Stuart_3.JPG"
-            alt="Photo of myself"
-            class="stuart_img_2"
-          />
-        </div>
-        <div class="About_myself">
-          <h1 id = "head_1"><b>About Me</b></h1>
-          <p class="Para_1">
-            I am 21 year old graduate from Paarl, Western Cape, South Africa who
-            has a passion for Web Development and have been practicing my skills
-            for the past year. I first encountered HTML and CSS back in high
-            school with having to create simple websites for our end of year
-            project in Computer Applications Technology. The web industry has
-            always caught my attention from then on with each website being
-            unique.
-          </p>
-          <br />
-          <p class="Para_1">
-            As a Junior Web Developer my aim is to build and maintain custom
-            websites with responsive designs and effective functionality. Being
-            a recent graduate, I am proficient in various programming languages
-            and I strive to learn and hone my skills more every day.
-          </p>
-          <br />
-          <p class="Para_1">You can find my CV below:</p>
-          <a class="button" href="Stuart Scott CV.pdf" target="_blank">MY CV</a>
-        </div>
-      </div>
-    </div>
-
-    <!-- SECTION 3 -->
-
-    <div class="skills" id="My_Skills">
-      <div class="Skills_row">
-        <h1 >Skills Outline</h1>
-        <hr />
-        <div class="skills_card">
-          <img src="Images/123.png" alt="" width="100%" height="auto" />
-        </div>
-
-        <div class="Section_3">
-          <div class="container">
-            <p style="font-size: 1.3em"><b>HTML</b></p>
-            <div class="skills_html"></div>
-          </div>
-          <div class="container">
-            <p style="font-size: 1.3em"><b>CSS</b></p>
-            <div class="skills_css"></div>
-          </div>
-
-          <div class="container">
-            <p style="font-size: 1.3em"><b>JavaScript</b></p>
-            <div class="skills_js"></div>
-          </div>
-
-          <div class="container">
-            <p style="font-size: 1.3em"><b>Python</b></p>
-            <div class="skills_python"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- SECTION 4 -->
-
-    <div class="Contact" id="Contact">
-      <!-- <h1 style="margin-top: 0.5em">Contact</h1> -->
-
-      <div class="row">
-      <div class="columns">
-        <ul class="price">
-          <li>
-            <img src="Icons/address.png" alt="Address Icon" class="Icon" />
-          </li>
-          <li>ADDRESS</li>
-          <li>Paarl, Western Cape</li>
-        </ul>
-      </div>
-
-      <div class="columns">
-        <ul class="price">
-          <li>
-            <img src="Icons/contact.png" alt="Phone Icon" class="Icon" />
-          </li>
-          <li>PHONE</li>
-          <li>072 410 6979</li>
-        </ul>
-      </div>
-
-      <div class="columns">
-        <ul class="price">
-          <li><img src="Icons/email.png" alt="E-mail Icon" class="Icon" /></li>
-          <li>EMAIL</li>
-          <li>stuartscott1999@gmail.com</li>
-        </ul>
-      </div>
-      </div>
-    </div>
-  </body>
+    
+    
+</body>
 </html>
