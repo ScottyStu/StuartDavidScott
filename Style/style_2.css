@@ -192,6 +192,9 @@ section{
 .card{
     height: 100%;
 }
+.title{
+  padding: 0 0.4em;
+}
 } 
   
 .title {
